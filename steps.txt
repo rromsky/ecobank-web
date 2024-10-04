@@ -1,0 +1,19 @@
+
+1.html code fror header
+2.create css and js files
+3.add media query
+4.copy fixed root colors
+5.header nav css stlyling
+6.section  "modal" html code
+7.add modal css
+8.add media query css code at 992px
+9.Add javascript code
+
+
+
+
+10. hero section
+11.features section
+12. articles section
+
+13. footer section
