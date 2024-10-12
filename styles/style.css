@@ -167,7 +167,7 @@
 
 .hero_copy {
 	margin: 0 0 10%;
-	color: hsl(233, 8%, 62%);
+	color: var(--white);
 	font-size: 0.8rem;
 	line-height: 1.25rem;
 }
@@ -181,7 +181,7 @@
 
 .features {
 	width: 80%;
-	padding: 15% 10% 10%;
+	padding: 10% 10% 10%;
 	display: flex;
 	flex-direction: column;
 	flex-flow: column nowrap;
@@ -195,16 +195,15 @@
 }
 
 .features__header {
-	margin: 0 0 5%;
+	margin: 0 0 20%;
 	font-size: 2rem;
-	font-weight: 400;
 	color: hsl(233, 26%, 24%);
 }
 
 .features__copy {
 	margin: 0 0 10%;
 	font-size: 0.8rem;
-	font-weight: 200;
+	font-weight: 500;
 	line-height: 1.25rem;
 	color: hsl(233, 8%, 62%);
 }
@@ -220,8 +219,8 @@
 
 .features-card__header {
 	font-size: 1.3rem;
-	font-weight: 400;
 	color: hsl(233, 26%, 24%);
+	text-align: center;
 }
 .features-card__copy {
 	color: hsl(233, 8%, 62%);
@@ -289,7 +288,7 @@
 /*//////////////////*/
 
 footer {
-	padding: 5% 8%;
+	padding: 3% 8%;
 	background-color: var(--dark-blue);
 	color: var(--very-light-gray);
 }
@@ -413,7 +412,7 @@ footer {
 	content: '';
 	height: 100px;
 	position: absolute;
-	width: 250px;
+	width: 50px;
 	z-index: 2;
 	background: linear-gradient(
 		to right,
@@ -449,4 +448,14 @@ footer {
 	height: 100px;
 	width: 250px;
 	object-fit: contain;
+}
+@keyframes enhancedFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(30px) scale(0.95) rotate(-3deg);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1) rotate(0deg);
+	}
 }

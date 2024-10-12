@@ -1,16 +1,16 @@
 /* Mobile + tablets */
 @media screen and (min-width: 300px) {
 	.hero_text {
-		margin: -20% 0 0;
+		margin: -30% 0 0;
 	}
 	.hero_header {
 		color: #000000;
 	}
 	.features__copy {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 	.features-card__header {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	.features-card__copy {
 		font-size: 1rem;
@@ -24,6 +24,7 @@
 	.articles-card__blurb {
 		font-size: 0.9rem;
 	}
+
 	.footer-nav__list-item {
 		font-size: 1rem;
 	}
@@ -38,6 +39,11 @@
 
 	.footer__section {
 		align-items: center;
+	}
+}
+@media screen and (min-width: 500px) {
+	.hero_text {
+		margin: -15% 0 0;
 	}
 }
 
@@ -172,7 +178,6 @@
 	}
 
 	.hero_text {
-		margin-top: 5vh;
 		align-items: stretch;
 		margin-left: 5%;
 	}
@@ -181,7 +186,7 @@
 		font-size: 2.5rem;
 	}
 	.hero_copy {
-		width: 80%;
+		width: 100%;
 		font-size: 1rem;
 		font-weight: normal;
 	}
@@ -189,7 +194,7 @@
 	.features {
 		width: 90%;
 		margin: -15% 0 0;
-		padding: 7% 10%;
+		padding: 5% 10%;
 		flex-flow: row wrap;
 		justify-content: flex-start;
 		background-color: hsl(220, 16%, 96%);
@@ -223,7 +228,7 @@
 		text-align: left;
 	}
 	.features-card__copy {
-		font-size: 0.9rem;
+		font-size: 1rem;
 		line-height: 1.4rem;
 	}
 }
@@ -280,7 +285,10 @@
 	background-color: var(--very-light-gray);
 }
 
+/* //////////////////////// */
 /* Larger screens, desktop */
+/* //////////////////////// */
+
 @media screen and (min-width: 993px) {
 	.articles-card:hover {
 		transform: translateY(-5px);
@@ -300,12 +308,20 @@
 		width: 250px;
 		margin: 5% auto 5% 0;
 	}
-}
-@media screen and (min-width: 1800px) {
-	.hero_text {
-		align-items: stretch;
-		margin-left: 5%;
+	.slider::before,
+	.slider::after {
+		width: 100px;
 	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1250px) {
+	.hero_text {
+		margin: 0;
+		scale: 0.8;
+	}
+}
+
+@media screen and (min-width: 1800px) {
 	.hero_copy {
 		font-size: 1.1em;
 	}
