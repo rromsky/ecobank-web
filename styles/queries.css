@@ -15,8 +15,9 @@
 	.features-card__copy {
 		font-size: 1rem;
 	}
-	.articles-card__byline {
-		font-size: 0.85rem;
+	.articles__header {
+		width: 100%;
+		text-align: center;
 	}
 	.articles-card__title {
 		font-size: 1.1rem;
@@ -53,6 +54,10 @@
 		display: none;
 	}
 
+	.articles__header {
+		text-align: left;
+	}
+
 	.modal {
 		display: none;
 	}
@@ -87,30 +92,15 @@
 	}
 
 	.header-nav__list {
-		/* border: 1px solid blue; */
 		width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
 	}
 
-	.header-nav__list-item {
-		/* border: 1px solid blue; */
-		list-style: none;
-		align-self: stretch;
-
-		/* display: flex;
-        flex-flow: column nowrap;
-        justify-content: center; */
-		position: relative;
-	}
-
 	.header-nav__link {
-		/* border: 1px solid green; */
 		height: 100%;
-
 		text-decoration: none;
-		color: var(--grayish-blue);
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -132,8 +122,8 @@
 		);
 	}
 
-	.btn {
-		scale: 1.05;
+	.hero_text .btn {
+		scale: 1.2;
 	}
 
 	.btn:hover {
@@ -187,14 +177,14 @@
 	}
 	.hero_copy {
 		width: 100%;
-		font-size: 1rem;
+		font-size: 1.05rem;
 		font-weight: normal;
 	}
 
 	.features {
 		width: 90%;
 		margin: -15% 0 0;
-		padding: 5% 10%;
+		padding: 5% 8%;
 		flex-flow: row wrap;
 		justify-content: flex-start;
 		background-color: hsl(220, 16%, 96%);
@@ -240,11 +230,6 @@
 	justify-content: flex-start;
 }
 
-.articles__header {
-	width: 100%;
-	text-align: left;
-}
-
 .articles-card {
 	width: 250px;
 	margin: 5% auto;
@@ -255,18 +240,8 @@
 	height: 180px;
 }
 
-.articles-card__byline {
-	font-size: 0.65rem;
-}
-
 .articles-card__title {
-	font-size: 0.85rem;
 	line-height: 1.15rem;
-}
-
-.articles-card__blurb {
-	font-size: 0.67rem;
-	line-height: 1.08rem;
 }
 
 .btn.btn-footer {
