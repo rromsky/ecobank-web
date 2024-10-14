@@ -1,7 +1,7 @@
-# Ecobank landing page solution
+# EcoInvest landing page solution
 
 This is a solution to the
-[Ecobank landing page challenge](https://rromsky.tech/ecobank-web)
+[EcoInvest landing page challenge](https://rromsky.tech/ecobank-web)
 
 ## Table of contents
 
@@ -47,4 +47,4 @@ Users should be able to:
 
 ---
 
-`Thanks for the challenge. I enjoyed working on it. Looking forward to more challenges like this.`
+`Thanks for the challenge. We enjoyed working on it. Looking forward to more challenges like this.`

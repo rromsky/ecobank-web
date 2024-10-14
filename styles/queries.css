@@ -15,10 +15,7 @@
 	.features-card__copy {
 		font-size: 1rem;
 	}
-	.articles__header {
-		width: 100%;
-		text-align: center;
-	}
+
 	.articles-card__title {
 		font-size: 1.1rem;
 	}
@@ -56,6 +53,7 @@
 
 	.articles__header {
 		text-align: left;
+		padding: 0;
 	}
 
 	.modal {
@@ -126,11 +124,12 @@
 		scale: 1.2;
 	}
 
-	.btn:hover {
+	/* .btn:hover {
 		position: relative;
-	}
+		видалити
+	} */
 
-	.btn:hover::after {
+	/* .btn:hover::after {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -143,7 +142,9 @@
 		flex-flow: row nowrap;
 		justify-content: center;
 		align-items: center;
-	}
+		
+		видалити
+	} */
 
 	.btn--header {
 		display: inline;
@@ -177,6 +178,7 @@
 	}
 	.hero_copy {
 		width: 100%;
+		color: white;
 		font-size: 1.05rem;
 		font-weight: normal;
 	}
@@ -220,6 +222,54 @@
 	.features-card__copy {
 		font-size: 1rem;
 		line-height: 1.4rem;
+	}
+	.carousel__container {
+		width: 80%; /* Wider container on desktops */
+	}
+
+	.carousel__text h2 {
+		font-size: 1.75rem; /* Larger font on desktops */
+	}
+
+	.carousel__text p {
+		font-size: 1.1rem;
+	}
+	.carousel__container {
+		width: 85%;
+	}
+
+	.carousel__slide {
+		flex-direction: row; /* Switch to side-by-side layout */
+		text-align: left; /* Align text left */
+	}
+	.carousel__image {
+		width: 100%;
+	}
+	.carousel__image-container {
+		width: 34%; /* Image takes 34% of the space */
+		margin-bottom: 0;
+		/* allign image at the center */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.carousel__text {
+		width: 66%; /* Text takes 66% of the space */
+		padding-left: 20px;
+		align-items: flex-start; /* Align text left */
+	}
+
+	.carousel__text h2 {
+		font-size: 1.5rem;
+	}
+
+	.carousel__text p {
+		font-size: 1rem;
+		width: 70%;
+	}
+	.carousel__image-container :hover {
+		scale: 0.99;
 	}
 }
 
@@ -289,7 +339,7 @@
 	}
 }
 
-@media screen and (min-width: 993px) and (max-width: 1250px) {
+@media screen and (min-width: 993px) and (max-width: 1400px) {
 	.hero_text {
 		margin: 0;
 		scale: 0.8;
@@ -306,11 +356,6 @@
 }
 
 @media screen and (min-width: 1900px) {
-	.hero_text {
-		margin-bottom: 10vh;
-		align-items: stretch;
-		margin-left: 5%;
-	}
 	.hero_copy {
 		font-size: 1.15em;
 	}
