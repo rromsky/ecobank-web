@@ -1,32 +1,33 @@
 /* Mobile + tablets */
 @media screen and (min-width: 300px) {
 	.hero_text {
-		margin: -20% 0 0;
+		margin: -30% 0 0;
 	}
-
+	.hero_header {
+		color: #000000;
+	}
 	.features__copy {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 	.features-card__header {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	.features-card__copy {
 		font-size: 1rem;
 	}
-	.articles-card__byline {
-		font-size: 0.85rem;
-	}
+
 	.articles-card__title {
 		font-size: 1.1rem;
 	}
 	.articles-card__blurb {
 		font-size: 0.9rem;
 	}
+
 	.footer-nav__list-item {
 		font-size: 1rem;
 	}
 	.btn {
-		scale: 0.8;
+		scale: 1;
 	}
 	.footer__container {
 		grid-template-columns: repeat(2, 1fr);
@@ -38,11 +39,21 @@
 		align-items: center;
 	}
 }
+@media screen and (min-width: 500px) {
+	.hero_text {
+		margin: -15% 0 0;
+	}
+}
 
 /* Middle screens */
 @media screen and (min-width: 992px) {
 	.header__toggle-btn {
 		display: none;
+	}
+
+	.articles__header {
+		text-align: left;
+		padding: 0;
 	}
 
 	.modal {
@@ -56,6 +67,10 @@
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
 		align-items: center;
+	}
+
+	.hero_header {
+		color: var(--white);
 	}
 
 	.header__logo {
@@ -75,30 +90,15 @@
 	}
 
 	.header-nav__list {
-		/* border: 1px solid blue; */
 		width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
 	}
 
-	.header-nav__list-item {
-		/* border: 1px solid blue; */
-		list-style: none;
-		align-self: stretch;
-
-		/* display: flex;
-        flex-flow: column nowrap;
-        justify-content: center; */
-		position: relative;
-	}
-
 	.header-nav__link {
-		/* border: 1px solid green; */
 		height: 100%;
-
 		text-decoration: none;
-		color: var(--grayish-blue);
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -120,16 +120,17 @@
 		);
 	}
 
-	.btn {
-		scale: 1;
+	.hero_text .btn {
+		scale: 1.2;
 	}
 
-	.btn:hover {
+	/* .btn:hover {
 		position: relative;
-	}
+		видалити
+	} */
 
-	.btn:hover::after {
-		content: 'Request Invite';
+	/* .btn:hover::after {
+		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -141,7 +142,9 @@
 		flex-flow: row nowrap;
 		justify-content: center;
 		align-items: center;
-	}
+		
+		видалити
+	} */
 
 	.btn--header {
 		display: inline;
@@ -150,39 +153,40 @@
 	.hero {
 		flex-flow: row-reverse nowrap;
 		background-color: hsl(0, 0%, 98%);
-		background: url(images/bg-intro-desktop.svg);
+		background: url(../images/bg-intro-desktop.svg);
 		background-size: 90%;
-		background-position-y: top -25vh;
-		background-position-x: right -30vw;
-		margin: 0 0 5%;
+		background-position: right top;
+		background-repeat: no-repeat;
+		background-position-x: -85%; /* Adjust based on how far right you want it */
+		margin: 0 0 10%;
 	}
 
 	.hero_img {
-		scale: 1.15;
+		scale: 1.1;
 		position: relative;
 		top: -5vh;
 		right: -5%;
 	}
 
 	.hero_text {
-		margin-top: 10vh;
 		align-items: stretch;
 		margin-left: 5%;
 	}
 	.hero_header {
 		text-align: left;
-		font-size: 2.7rem;
+		font-size: 2.5rem;
 	}
 	.hero_copy {
-		width: 80%;
-		font-size: 1rem;
+		width: 100%;
+		color: white;
+		font-size: 1.05rem;
 		font-weight: normal;
 	}
 
 	.features {
 		width: 90%;
 		margin: -15% 0 0;
-		padding: 7% 10%;
+		padding: 5% 8%;
 		flex-flow: row wrap;
 		justify-content: flex-start;
 		background-color: hsl(220, 16%, 96%);
@@ -216,8 +220,56 @@
 		text-align: left;
 	}
 	.features-card__copy {
-		font-size: 0.9rem;
+		font-size: 1rem;
 		line-height: 1.4rem;
+	}
+	.carousel__container {
+		width: 80%; /* Wider container on desktops */
+	}
+
+	.carousel__text h2 {
+		font-size: 1.75rem; /* Larger font on desktops */
+	}
+
+	.carousel__text p {
+		font-size: 1.1rem;
+	}
+	.carousel__container {
+		width: 85%;
+	}
+
+	.carousel__slide {
+		flex-direction: row; /* Switch to side-by-side layout */
+		text-align: left; /* Align text left */
+	}
+	.carousel__image {
+		width: 100%;
+	}
+	.carousel__image-container {
+		width: 34%; /* Image takes 34% of the space */
+		margin-bottom: 0;
+		/* allign image at the center */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.carousel__text {
+		width: 66%; /* Text takes 66% of the space */
+		padding-left: 20px;
+		align-items: flex-start; /* Align text left */
+	}
+
+	.carousel__text h2 {
+		font-size: 1.5rem;
+	}
+
+	.carousel__text p {
+		font-size: 1rem;
+		width: 70%;
+	}
+	.carousel__image-container :hover {
+		scale: 0.99;
 	}
 }
 
@@ -226,11 +278,6 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-}
-
-.articles__header {
-	width: 100%;
-	text-align: left;
 }
 
 .articles-card {
@@ -243,26 +290,12 @@
 	height: 180px;
 }
 
-.articles-card__byline {
-	font-size: 0.65rem;
-}
-
 .articles-card__title {
-	font-size: 0.85rem;
 	line-height: 1.15rem;
 }
 
-.articles-card__blurb {
-	font-size: 0.67rem;
-	line-height: 1.08rem;
-}
-
-footer {
-	padding: 5% 8%;
-}
-
 .btn.btn-footer {
-	scale: 0.8;
+	scale: 0.9;
 }
 .footer-nav {
 	justify-content: space-around;
@@ -274,23 +307,59 @@ footer {
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: white;
+	background-color: var(--very-light-gray);
 }
 
+/* //////////////////////// */
 /* Larger screens, desktop */
-@media screen and (min-width: 1200px) {
-	.hero_header {
-		font-size: 3rem;
+/* //////////////////////// */
+
+@media screen and (min-width: 993px) {
+	.articles-card:hover {
+		transform: translateY(-5px);
 	}
 
-	footer {
-		padding: 5% 8%;
-	}
 	.footer__container {
 		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.footer__section {
 		align-items: center;
+	}
+}
+
+@media screen and (min-width: 893px) and (max-width: 1190px) {
+	.articles-card {
+		width: 250px;
+		margin: 5% auto 5% 0;
+	}
+	.slider::before,
+	.slider::after {
+		width: 100px;
+	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+	.hero_text {
+		margin: 0;
+		scale: 0.8;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.hero_copy {
+		font-size: 1.1em;
+	}
+	.hero_header {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	.hero_copy {
+		font-size: 1.15em;
+	}
+	.hero_header {
+		font-size: 3.5rem;
 	}
 }
