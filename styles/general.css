@@ -20,3 +20,7 @@
 	transition: all 0.6s;
 	font-family: public sans, sans-serif;
 }
+
+html {
+	scroll-behavior: smooth;
+}
