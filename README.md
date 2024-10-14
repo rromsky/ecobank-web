@@ -1,5 +1,6 @@
 # EcoInvest landing page solution
 
+
 This is a solution to the
 [EcoInvest landing page challenge](https://rromsky.tech/ecobank-web)
 
