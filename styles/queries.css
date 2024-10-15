@@ -236,12 +236,30 @@
 	}
 }
 
+@media screen and (min-width: 1400px) {
+	.hero {
+		flex-flow: row-reverse nowrap;
+		background-color: var(--very-light-gray);
+		background: url(../images/bg-intro-desktop.svg);
+		background-size: 90%;
+		background-position: right top;
+		background-repeat: no-repeat;
+		background-position-x: -85%; /* Adjust based on how far right you want it */
+		background-position-y: 30%;
+		margin: 0 0 10%;
+	}
+}
+
 @media screen and (min-width: 1800px) {
 	.hero_copy {
 		font-size: 1.1em;
 	}
 	.hero_header {
 		font-size: 3rem;
+	}
+
+	.hero {
+		background-position-y: 30%;
 	}
 }
 
