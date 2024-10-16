@@ -1,6 +1,5 @@
 # EcoInvest landing page solution
 
-
 This is a solution to the
 [EcoInvest landing page challenge](https://rromsky.tech/ecobank-web)
 
@@ -23,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://rromsky.tech/ecoban-web](https://your-live-site-url.com)
+- Live Site URL: [https://rromsky.tech/ecoban-web](https://rromsky.tech/ecoban-web)
 
 ### Built with
 
@@ -32,8 +31,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Styled Components](https://styled-components.com/) - For styles
+- JavaScript
 
 ## Author
 
