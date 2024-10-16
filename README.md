@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://rromsky.tech/ecoban-web](https://rromsky.tech/ecoban-web)
+- Live Site URL: [https://rromsky.tech/ecobank-web](https://rromsky.tech/ecobank-web)
 
 ### Built with
 

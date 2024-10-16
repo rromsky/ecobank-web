@@ -19,3 +19,25 @@ toggleBtn.addEventListener('click', () => {
 
 	console.log('Modal toggled and scroll behavior updated')
 })
+
+const toTopBtn = document.getElementById('toTopBtn')
+
+// Show the button when the user scrolls down 100px from the top
+window.onscroll = function () {
+	if (
+		document.body.scrollTop > 100 ||
+		document.documentElement.scrollTop > 100
+	) {
+		toTopBtn.classList.add('visible')
+	} else {
+		toTopBtn.classList.remove('visible')
+	}
+}
+
+// Scroll to the top
+toTopBtn.onclick = function () {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	})
+}
