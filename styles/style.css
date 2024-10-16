@@ -422,6 +422,7 @@
 	overflow: hidden;
 	position: relative;
 	max-width: 85%;
+	user-select: none;
 }
 
 .slider::before,
