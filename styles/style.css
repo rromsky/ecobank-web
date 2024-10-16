@@ -101,6 +101,10 @@
 	text-decoration: none;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .btn {
 	border: none;
 	height: 50px;
@@ -517,4 +521,8 @@ footer {
 	text-align: center;
 	color: var(--very-light-gray);
 	font-size: 0.8rem;
+}
+
+.hero_text {
+	backdrop-filter: blur(1px);
 }
