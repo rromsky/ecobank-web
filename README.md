@@ -1,7 +1,7 @@
-# Ecobank landing page solution
+# EcoInvest landing page solution
 
-This is a solution to the 
-[Ecobank landing page challenge](https://rromsky.tech/ecobank-web)
+This is a solution to the
+[EcoInvest landing page challenge](https://rromsky.tech/ecobank-web)
 
 ## Table of contents
 
@@ -12,7 +12,6 @@ This is a solution to the
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-
 
 ### The challenge
 
@@ -32,18 +31,19 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Styled Components](https://styled-components.com/) - For styles
-
+- JavaScript
 
 ## Author
 
 **Драйвісти Team**
 
 ## Acknowledgments
+
 - **Романько Роман** - DEV
-- **Шатайло Вячеслав** - QA
+- **Шатайло В'ячеслав** - QA
 - **Шпикуляк Андрій** - PM
 - **Шульга Денис** - Devops
-****
-```Thanks for the challenge. I enjoyed working on it. Looking forward to more challenges like this.```
+
+---
+
+`Thanks for the challenge. We enjoyed working on it. Looking forward to more challenges like this.`

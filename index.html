@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 
 		<link
 			rel="icon"
@@ -11,41 +10,40 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-
 		<title>Ecobank - Invest</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
-
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/queries.css" />
 	</head>
+
 	<body>
 		<header class="header">
-			<img class="header__logo" src="images/logo.jpg" />
+			<a href="#"><img class="header__logo" src="images/logougb.svg" /></a>
 			<nav class="header-nav">
 				<ul class="header-nav__list">
 					<li class="header-nav__list-item">
-						<a class="header-nav__link" href="/">Головна</a>
+						<a
+							class="header-nav__link"
+							href="https://www.ukrgasbank.com/card_and_current_accounts/cards/"
+							>Відкриття картки</a
+						>
 					</li>
 					<li class="header-nav__list-item">
-						<a class="header-nav__link" href="/">Відкриття картки</a>
+						<a
+							class="header-nav__link"
+							href="https://www.ukrgasbank.com/private/deposits/"
+							>Депозити</a
+						>
 					</li>
 					<li class="header-nav__list-item">
-						<a class="header-nav__link" href="/">Депозити</a>
+						<a
+							class="header-nav__link"
+							href="https://www.ukrgasbank.com/chergovi/"
+							>Чергові відділення</a
+						>
 					</li>
 					<li class="header-nav__list-item">
-						<a class="header-nav__link" href="/">Чергові відділення</a>
-					</li>
-					<li class="header-nav__list-item">
-						<a class="header-nav__link" href="/">Контакти</a>
+						<a class="header-nav__link" href="#contacts">Контакти</a>
 					</li>
 				</ul>
 			</nav>
@@ -53,48 +51,76 @@
 				class="header__toggle-btn header__toggle-btn--hamburger"
 				id="htb"
 			></button>
-			<button class="btn btn--header">Почати реєстрацію</button>
+			<button class="btn btn--header">Почати інвестувати</button>
+
 			<section class="modal modal--inactive" id="modal">
 				<nav class="modal-nav">
 					<ul class="modal-nav__list">
 						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="/">Home</a>
+							<a
+								class="modal-nav__link"
+								href="https://www.ukrgasbank.com/card_and_current_accounts/cards/"
+								>Відкриття картки</a
+							>
 						</li>
 						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="/">About</a>
+							<a
+								class="modal-nav__link"
+								href="https://www.ukrgasbank.com/private/deposits/"
+								>Депозити</a
+							>
 						</li>
 						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="/">Contact</a>
+							<a
+								class="modal-nav__link"
+								href="https://www.ukrgasbank.com/chergovi/"
+								>Чергові відділення</a
+							>
 						</li>
 						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="/">Blog</a>
-						</li>
-						<li class="modal-nav__item">
-							<a class="modal-nav__link" href="/">Carers</a>
+							<a
+								class="modal-nav__link"
+								href="https://www.ukrgasbank.com/contacts/"
+								>Контакти</a
+							>
 						</li>
 					</ul>
 				</nav>
 			</section>
 		</header>
 
+		<button id="toTopBtn" class="to-top-btn">
+			<svg
+				class="to-top-icon"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					class="to-top-icon-line"
+					d="M16.58 15.4102L12 10.8302L7.41 15.4102L6 14.0002L12 8.00016L18 14.0002L16.58 15.4102Z"
+					fill="white"
+				></path>
+			</svg>
+		</button>
+
 		<section class="hero">
 			<img class="hero_img" src="images/image-mockups.png" />
 			<section class="hero_text">
-				<h1 class="hero_header">Ecobank - інвестиції у вашому смартфоні</h1>
+				<h1 class="hero_header">EcoInvest - інвестиції у вашому смартфоні</h1>
 				<p class="hero_copy">
-					Гроші повинні працювати. Ви можете зручно та легко почати інвестувати завдяки нашому додатку!
+					Гроші повинні працювати. Ви можете зручно та легко почати інвестувати
+					завдяки нашому додатку!
 				</p>
-				<button class="btn">Почати реєстрацію</button>
+				<button class="btn">Почати інвестувати</button>
 			</section>
 		</section>
 
 		<section class="features">
 			<div class="feature__content">
 				<h1 class="features__header">Що Ви отримаєте?</h1>
-
-				<p class="features__copy">
-					Простий додаток з потужними можливостями. Почати інвестувати може кожен користувач нашого банку.
-				</p>
 			</div>
 
 			<div class="feature__cards">
@@ -102,23 +128,8 @@
 					<img class="features-card__img" src="images/icon-online.svg" />
 					<h1 class="features-card__header">Зручний інтерфейс</h1>
 					<p class="features-card__copy">
-						Інвестиції - складний процес. Проте для Вас є зручний застосунок, що допоможе вам формувати власний капітал
-					</p>
-				</article>
-
-				<article class="features-cards">
-					<img class="features-card__img" src="images/icon-budgeting.svg" />
-					<h1 class="features-card__header">Інструменти для моніторингу портфоліо</h1>
-					<p class="features-card__copy">
-						Відстежуйте ваші інвестиції, щоб бачити, як вони розвиваються з часом, і вчасно реагувати на зміни.
-					</p>
-				</article>
-
-				<article class="features-cards">
-					<img class="features-card__img" src="images/icon-onboarding.svg" />
-					<h1 class="features-card__header">Спільнота інвесторів</h1>
-					<p class="features-card__copy">
-						Приєднуйтеся до спільноти, де ви можете ділитися досвідом, задавати питання і отримувати підтримку від інших інвесторів.
+						Інвестиції - складний процес. Проте для Вас є зручний застосунок, що
+						допоможе вам формувати власний капітал.
 					</p>
 				</article>
 
@@ -126,117 +137,272 @@
 					<img class="features-card__img" src="images/icon-api.svg" />
 					<h1 class="features-card__header">Навчальні ресурси</h1>
 					<p class="features-card__copy">
-						Доступ до статей, відео та курсів, які допоможуть вам краще розуміти інвестиційний процес і зробити перші кроки.
+						Доступ до статей, відео та курсів, які допоможуть вам краще розуміти
+						інвестиційний процес і зробити перші кроки.
 					</p>
 				</article>
+
+				<article class="features-cards">
+					<img class="features-card__img" src="images/icon-onboarding.svg" />
+					<h1 class="features-card__header">Спільнота інвесторів</h1>
+					<p class="features-card__copy">
+						Приєднуйтеся до спільноти, де ви можете ділитися досвідом, задавати
+						питання і отримувати підтримку від інших інвесторів.
+					</p>
+				</article>
+
+				<article class="features-cards">
+					<img class="features-card__img" src="images/icon-budgeting.svg" />
+					<h1 class="features-card__header">Інструменти для моніторингу</h1>
+					<p class="features-card__copy">
+						Регулярно відстежуйте ваші інвестиції, щоб бачити, як вони
+						змінюються з часом, і своєчасно реагувати на будь-які зміни.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="partners__container">
+				<div class="partners__track-container">
+					<div class="partners__track">
+						<div class="partners__slide">
+							<div class="partners__text">
+								<h2>Партнерство з Дія.Освіта</h2>
+								<p>
+									Дізнайтеся про основи інвестування та навчіться управляти
+									власним капіталом завдяки спільному проекту EcoInvest і
+									Дія.Освіта. Освітній серіал від фінансового експерта Ігоря
+									Луценка допоможе вам освоїти інвестиційні принципи та обрати
+									найкращі інструменти для зростання вашого капіталу.
+								</p>
+							</div>
+							<div class="partners__image-container">
+								<a href="https://osvita.diia.gov.ua/"
+									><img
+										src="/ecobank-web/images/partners_image.png"
+										alt="Дія.Освіта"
+										class="partners__image"
+								/></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section class="articles">
 			<h1 class="articles__header">Тематичні публікації</h1>
 			<article class="articles-card">
-				<img src="images/image-currency.jpg" class="articles-card__img" />
+				<img
+					src="/ecobank-web/images/article-1.png"
+					class="articles-card__img"
+				/>
 
 				<div class="articles-card__content">
-					<p class="articles-card__byline">Максим Коваль</p>
-					<h2 class="articles-card__title">
-						Способи розвитку капіталу
-					</h2>
+					<h2 class="articles-card__title">Способи розвитку капіталу</h2>
 					<p class="articles-card__blurb">
-						Отримуючи досить пристойний дохід від мого бізнесу, я почав шукати стратегії розвитку свого капіталу і натрапив на тему інвестицій у цінні папери…
+						Отримуючи досить пристойний дохід від мого бізнесу, я почав шукати
+						стратегії розвитку свого капіталу і натрапив на тему інвестицій в
+						акції…
 					</p>
 				</div>
 			</article>
 			<article class="articles-card">
-				<img src="images/image-restaurant.jpg" class="articles-card__img" />
+				<img
+					src="/ecobank-web/images/article-2.png"
+					class="articles-card__img"
+				/>
 
 				<div class="articles-card__content">
-					<p class="articles-card__byline">Джейкоб Маккензі</p>
-					<h2 class="articles-card__title">
-						Поради для старту в інвестиціях
-					</h2>
+					<h2 class="articles-card__title">Поради для старту в інвестиціях</h2>
 					<p class="articles-card__blurb">
-						Відкрийте для себе корисні поради, які допоможуть вам в управлінні вашими інвестиціями…
+						Відкрийте для себе корисні поради, які допоможуть вам в управлінні
+						вашими інвестиціями…
 					</p>
 				</div>
 			</article>
 			<article class="articles-card">
-				<img src="images/image-plane.jpg" class="articles-card__img" />
+				<img
+					src="/ecobank-web/images/article-3.png"
+					class="articles-card__img"
+				/>
 
 				<div class="articles-card__content">
-					<p class="articles-card__byline">Олівія Мартін</p>
-					<h2 class="articles-card__title">
-						Секрети успішних інвесторів
-					</h2>
+					<h2 class="articles-card__title">Секрети успішних інвесторів</h2>
 					<p class="articles-card__blurb">
-						Дізнайтеся, які стратегії використовують успішні інвестори для досягнення своїх цілей…
+						Дізнайтеся, які стратегії використовують успішні інвестори для
+						досягнення своїх цілей…
 					</p>
 				</div>
 			</article>
 			<article class="articles-card">
-				<img src="images/image-confetti.jpg" class="articles-card__img" />
+				<img
+					src="/ecobank-web/images/article-4.png"
+					class="articles-card__img"
+				/>
 
 				<div class="articles-card__content">
-					<p class="articles-card__byline">Джон Сміт</p>
 					<h2 class="articles-card__title">
-						Мій досвід використання та шлях інвестування завдяки Ecobank
+						Мій досвід використання та шлях інвестування завдяки EcoInvest
 					</h2>
 					<p class="articles-card__blurb">
-						Декілька років тому, коли я зацікавився темою інвестицій і натрапив на Ecobank...
+						Декілька років тому, коли я зацікавився темою інвестицій і натрапив
+						на EcoInvest...
 					</p>
 				</div>
 			</article>
 		</section>
 
-		<footer>
-			<div class="footer__logo-socials">
-				<img src="images/logo.jpg" class="footer__logo" />
-				<ul class="footer__social">
-					<li class="footer__social-icon">
-						<a href=""><img src="images/icon-facebook.svg" /></a>
-					</li>
-					<li class="footer__social-icon">
-						<a href=""><img src="images/icon-youtube.svg" /></a>
-					</li>
-					<li class="footer__social-icon">
-						<a href=""><img src="images/icon-twitter.svg" /></a>
-					</li>
-					<li class="footer__social-icon">
-						<a href=""><img src="images/icon-pinterest.svg" /></a>
-					</li>
-					<li class="footer__social-icon">
-						<a href=""><img src="images/icon-instagram.svg" /></a>
-					</li>
-				</ul>
+		<div class="slider">
+			<div class="slide-track">
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/ministry.png"
+						alt="Міністерство цифрової трансформації"
+					/>
+				</div>
+				<div class="slide">
+					<img src="/ecobank-web/images/dia.png" alt="Дія Освіта" />
+				</div>
+				<div class="slide">
+					<img src="/ecobank-web/images/google_cloud.png" alt="Google Cloud" />
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/fund.png"
+						alt="Фонд гарантування вкладів"
+					/>
+				</div>
+				<div class="slide">
+					<img src="/ecobank-web/images/broker.png" alt="Svit Invest" />
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/sigma_software.png"
+						alt="Sigma Software"
+					/>
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/energy_alternative.png"
+						alt="Енергетична Альтернатива"
+					/>
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/ministry.png"
+						alt="Міністерство цифрової трансформації"
+					/>
+				</div>
+				<div class="slide">
+					<img src="/ecobank-web/images/dia.png" alt="Дія Освіта" />
+				</div>
+				<div class="slide">
+					<img src="/ecobank-web/images/google_cloud.png" alt="Google Cloud" />
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/fund.png"
+						alt="Фонд гарантування вкладів"
+					/>
+				</div>
+				<div class="slide">
+					<img src="/ecobank-web/images/broker.png" alt="Svit Invest" />
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/sigma_software.png"
+						alt="Sigma Software"
+					/>
+				</div>
+				<div class="slide">
+					<img
+						src="/ecobank-web/images/energy_alternative.png"
+						alt="Енергетична Альтернатива"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<footer id="contacts">
+			<div class="footer__container">
+				<!-- Contacts Section -->
+				<div class="footer__section">
+					<h4>EcoInvest</h4>
+					<img src="/ecobank-web/images/logougb.svg" class="footer__logo" />
+					<p>Очолюємо майбутнє</p>
+					<p>
+						Вул. Старонаводницька 19, Київ<br />
+						098 620 20 20<br />
+						www.ecobank.com
+					</p>
+				</div>
+
+				<!-- Bank Section -->
+				<div class="footer__section">
+					<h4>Банк</h4>
+					<ul>
+						<li><a href="#">Про банк</a></li>
+						<li><a href="#">Контакти</a></li>
+						<li><a href="#">Кар'єра</a></li>
+						<li><a href="#">Тарифи</a></li>
+						<li><a href="#">Умови та правила</a></li>
+					</ul>
+				</div>
+
+				<!-- Products Section -->
+				<div class="footer__section">
+					<h4>Продукти</h4>
+					<ul>
+						<li><a href="#">Депозити</a></li>
+						<li><a href="#">Розстрочка</a></li>
+						<li><a href="#">Облігації</a></li>
+						<li><a href="#">Покупка частинами</a></li>
+						<li><a href="#">Еквайринг для бізнесу</a></li>
+					</ul>
+				</div>
+
+				<!-- Social Networks Section -->
+				<div class="footer__section">
+					<h4>Ми в соціальних мережах</h4>
+					<ul class="footer__social">
+						<li>
+							<a href="https://www.facebook.com/Ukrgasbank/"
+								><img src="images/icon-facebook.svg"
+							/></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/@Ukrgasbank"
+								><img src="images/icon-youtube.svg"
+							/></a>
+						</li>
+						<li>
+							<a href="https://x.com/ukrgasbank"
+								><img src="images/icon-twitter.svg"
+							/></a>
+						</li>
+
+						<li>
+							<a href="#"><img src="images/icon-instagram.svg" /></a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Footer Button Section -->
+				<div class="footer__section">
+					<h4>Інвестуйте сьогодні</h4>
+					<button id="footer__button" class="footer__button">
+						Почати інвестувати
+					</button>
+				</div>
 			</div>
 
-			<nav class="footer-nav">
-				<ul class="footer-nav__list">
-					<li class="footer-nav__list-item">
-						<a class="footer-nav__list-link">About Us</a>
-					</li>
-					<li class="footer-nav__list-item">
-						<a class="footer-nav__list-link"> Contact</a>
-					</li>
-					<li class="footer-nav__list-item">
-						<a class="footer-nav__list-link"> Blog</a>
-					</li>
-					<li class="footer-nav__list-item">
-						<a class="footer-nav__list-link">Careers</a>
-					</li>
-					<li class="footer-nav__list-item">
-						<a class="footer-nav__list-link">Support</a>
-					</li>
-					<li class="footer-nav__list-item">
-						<a class="footer-nav__list-link">Privacy Policy</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="footer__cat-copyright">
-				<button class="btn btn-footer">Request Invite</button>
-				<p class="footer__copyright">© Ecobank. All Rights Reserved</p>
+			<div class="footer__copyright">
+				<p>© Ecobank. Всі права захищено</p>
 			</div>
 		</footer>
+
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--dark-blue: hsl(233, 26%, 24%);
+	--lime-green: hsl(136, 65%, 51%);
+	--bright-cyan: hsl(192, 70%, 51%);
+	--lime-green-lighter: hsl(136, 65%, 80%);
+	--bright-cyan-lighter: hsl(192, 70%, 80%);
+
+	--grayish-blue: hsl(233, 8%, 62%);
+	--light-grayish-blue: hsl(220, 16%, 96%);
+	--very-light-gray: hsl(0, 0%, 98%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	transition: all 0.6s;
+	font-family: public sans, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+	scroll-behavior: smooth;
+}
