@@ -453,7 +453,7 @@
 .slide-track {
 	animation: scroll 50s linear infinite;
 	display: flex;
-	width: calc(250px * 14);
+	width: calc(250px * 12);
 }
 
 .slide {
