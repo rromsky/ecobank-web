@@ -41,3 +41,26 @@ toTopBtn.onclick = function () {
 		behavior: 'smooth',
 	})
 }
+
+
+const targets = document.querySelectorAll(".lazy-hide");
+
+const lazyLoad = (target) => {
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        console.log('APPLYED')
+      if (entry.isIntersecting) {
+        console.log('INtersected')
+        const t = entry.target;
+        t.classList.add("animation-left");
+        t.classList.remove("lazy-hide");
+
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target);
+};
+
+targets.forEach(lazyLoad);
